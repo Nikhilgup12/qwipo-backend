@@ -1,0 +1,62 @@
+POST http://localhost:3000/customers
+Content-type: application/json
+
+{
+  "first_name": "neeraj",
+  "last_name": "gupta",
+  "phone": "00847384938",
+  "email":"nikhil@gmail.com",
+  "address":"njhjjfkdjkdjhjhk"
+} 
+
+### 
+
+GET http://localhost:3000/all-customers?name=&city=
+
+### 
+
+GET http://localhost:3000/all-customers?city=New%20York
+
+### 
+
+GET http://localhost:3000/all-customers?name=neeraj&city=njhjjfkdjkdjhjhk
+
+### 
+
+GET http://localhost:3000/api/customers/2
+
+
+### 
+PUT http://localhost:3000/customers/1
+Content-type: application/json
+
+{
+"first_name": "nikhil",
+  "last_name": "neeraj@gmail.com",
+  "phone": "8652487834",
+  "email": "neeraj@gmail.com",
+  "address": "njhjjfkdjkdjhjhk"
+}
+
+### 
+
+DELETE  http://localhost:3000/customers/1
+
+###
+
+POST http://localhost:3000/customers/2/addresses
+Content-Type: application/json
+
+{
+  "address": "123 New Street, City, Country"
+}
+
+###
+
+GET http://localhost:3000/customers/2/addresses
+
+###
+
+DELETE http://localhost:3000/customers/2/addresses/2
+
+
