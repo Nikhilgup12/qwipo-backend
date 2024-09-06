@@ -1,4 +1,4 @@
-POST http://localhost:3000/customers
+POST https://qwipo-backend-2.onrender.com/customers
 Content-type: application/json
 
 {
@@ -11,7 +11,7 @@ Content-type: application/json
 
 ### 
 
-GET http://localhost:3000/all-customers?name=&city=
+GET https://qwipo-backend-2.onrender.com/all-customers?name=&city=
 
 ### 
 
